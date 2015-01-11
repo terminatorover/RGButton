@@ -31,6 +31,13 @@
     
     CGSize size;
     BOOL tapped;
+    
+    //--->
+    UIImage *image;
+    UIImageView *imageView;
+    
+    //--->
+    BOOL firstTime;
 
 }
 /*
@@ -48,6 +55,13 @@
     {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [self setUpViewHierrachy];
+            UIImage *i1 = [UIImage imageNamed:@"dropbox_copyrighted-50"];
+            UIImage *i2 = [UIImage imageNamed:@"facebook-50"];
+            UIImage *i3 = [UIImage imageNamed:@"foursquare-50"];
+            UIImage *i4 = [UIImage imageNamed:@"google_plus-50"];
+            UIImage *i5 = [UIImage imageNamed:@"twitter-50"];
+            NSArray *listOfImages = @[i1,i2,i3,i4,i5];
+            [self setImagesForButtons:listOfImages];
         });
 
          [self setUpGestureRecognition];
@@ -91,13 +105,7 @@
     [b4 addTarget:self action:@selector(button4) forControlEvents:UIControlEventTouchUpInside];
     [b5 addTarget:self action:@selector(button5) forControlEvents:UIControlEventTouchUpInside];
     
-    
-    b1.backgroundColor = [UIColor greenColor];
-    b2.backgroundColor = [UIColor grayColor];
-    b3.backgroundColor = [UIColor redColor];
-    b4.backgroundColor = [UIColor blackColor];
-    b5.backgroundColor = [UIColor blueColor];
-    
+
 
     [self visibility:NO];
     [self makeTheViewsCircular];
@@ -105,7 +113,7 @@
     darkerView.backgroundColor = [UIColor redColor];
     darkerView.alpha = .7;
     darkerView.userInteractionEnabled = NO;
-    radius = 120;
+    radius = 170;
 
     
     position1 = CGPointMake(centerPoint.x + radius * cos(M_PI/6), centerPoint.y - radius* sin(M_PI/6));
@@ -115,6 +123,16 @@
     position5 = CGPointMake(centerPoint.x + radius * cos(5 * M_PI/6),centerPoint.y - radius* sin(5 * M_PI/6));
     
     size = CGSizeMake(self.bounds.size.width/1.5,self.bounds.size.height/1.5);
+    
+    image = [UIImage imageNamed:@"collapse-50"];
+    imageView = [[UIImageView alloc]initWithFrame:self.bounds];
+    [self addSubview:imageView];
+    imageView.image = image;
+    imageView.layer.masksToBounds = YES;
+    imageView.layer.cornerRadius = imageView.layer.bounds.size.width /2;
+    self.layer.cornerRadius = self.layer.bounds.size.width/2;
+    
+//    layer.cornerRadius
 }
 
 - (void)setUpGestureRecognition
@@ -167,11 +185,17 @@
         b4.frame = CGRectMake(position4.x, position4.y, size.width, size.height);
         b5.frame = CGRectMake(position5.x, position5.y, size.width, size.height);
         
+        
+        CGAffineTransform currentTransform = self.transform;
+        CGAffineTransform newTransform = CGAffineTransformRotate(currentTransform, M_PI/2);
+        self.transform = newTransform;
    
     }
     else//move the views to the center
     {
         [UIView animateWithDuration:.5 animations:^{
+            CGAffineTransform identityTransform = CGAffineTransformIdentity;
+            self.transform = identityTransform;
             b1.frame = CGRectMake(centerPoint.x, centerPoint.y,self.bounds.size.width/2, self.bounds.size.width/2);
             b2.frame = CGRectMake(centerPoint.x, centerPoint.y,self.bounds.size.width/2, self.bounds.size.width/2);
             b3.frame = CGRectMake(centerPoint.x, centerPoint.y,self.bounds.size.width/2, self.bounds.size.width/2);
@@ -298,12 +322,13 @@
 #pragma mark - Animations
 - (void)animate
 {
-    [UIView animateWithDuration:.4
-                          delay:0.0
-         usingSpringWithDamping:.4
-          initialSpringVelocity:5
-                        options:UIViewAnimationOptionCurveEaseIn//UIViewAnimationOptionCurveEaseInOut
+    [UIView animateWithDuration:0.7
+                          delay:0
+         usingSpringWithDamping:0.5
+          initialSpringVelocity:0
+                        options:0
                      animations:^{
+                         
                          [self moveView:!tapped];
                          tapped = !tapped;
                      } completion:^(BOOL finished) {
@@ -319,7 +344,22 @@
  
     [self recomputePositions];
     [darkerView setFrame:mainWindow.bounds];
-    [self animate];
+
+
+
+}
+
+
+- (void)setImagesForButtons:(NSArray *)imageArray
+{
+
+    [b1 setImage:imageArray[0] forState:UIControlStateNormal];
+    [b2 setImage:imageArray[1] forState:UIControlStateNormal];
+    [b3 setImage:imageArray[2] forState:UIControlStateNormal];
+    [b4 setImage:imageArray[3] forState:UIControlStateNormal];
+    [b5 setImage:imageArray[4] forState:UIControlStateNormal];
+    
+    
 }
 
 @end

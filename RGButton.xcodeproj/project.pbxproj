@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1E607E21A62030400FE3882 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E607E11A62030400FE3882 /* main.m */; };
+		A1E607E51A62030400FE3882 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E607E41A62030400FE3882 /* AppDelegate.m */; };
+		A1E607E81A62030400FE3882 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E607E71A62030400FE3882 /* ViewController.m */; };
+		A1E607EB1A62030400FE3882 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E607E91A62030400FE3882 /* Main.storyboard */; };
+		A1E607ED1A62030400FE3882 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1E607EC1A62030400FE3882 /* Images.xcassets */; };
+		A1E607F01A62030400FE3882 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1E607EE1A62030400FE3882 /* LaunchScreen.xib */; };
+		A1E607FC1A62030400FE3882 /* RGButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E607FB1A62030400FE3882 /* RGButtonTests.m */; };
+		A1E608071A6203CA00FE3882 /* RGButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E608061A6203CA00FE3882 /* RGButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1E607F61A62030400FE3882 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1E607D41A62030300FE3882 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1E607DB1A62030400FE3882;
+			remoteInfo = RGButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A1E607DC1A62030400FE3882 /* RGButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E607E01A62030400FE3882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1E607E11A62030400FE3882 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A1E607E31A62030400FE3882 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A1E607E41A62030400FE3882 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A1E607E61A62030400FE3882 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A1E607E71A62030400FE3882 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A1E607EA1A62030400FE3882 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1E607EC1A62030400FE3882 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A1E607EF1A62030400FE3882 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A1E607F51A62030400FE3882 /* RGButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RGButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E607FA1A62030400FE3882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1E607FB1A62030400FE3882 /* RGButtonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGButtonTests.m; sourceTree = "<group>"; };
+		A1E608051A6203CA00FE3882 /* RGButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGButton.h; sourceTree = "<group>"; };
+		A1E608061A6203CA00FE3882 /* RGButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGButton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1E607D91A62030400FE3882 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1E607F21A62030400FE3882 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1E607D31A62030300FE3882 = {
+			isa = PBXGroup;
+			children = (
+				A1E607DE1A62030400FE3882 /* RGButton */,
+				A1E607F81A62030400FE3882 /* RGButtonTests */,
+				A1E607DD1A62030400FE3882 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1E607DD1A62030400FE3882 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1E607DC1A62030400FE3882 /* RGButton.app */,
+				A1E607F51A62030400FE3882 /* RGButtonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1E607DE1A62030400FE3882 /* RGButton */ = {
+			isa = PBXGroup;
+			children = (
+				A1E607E31A62030400FE3882 /* AppDelegate.h */,
+				A1E607E41A62030400FE3882 /* AppDelegate.m */,
+				A1E607E61A62030400FE3882 /* ViewController.h */,
+				A1E607E71A62030400FE3882 /* ViewController.m */,
+				A1E607E91A62030400FE3882 /* Main.storyboard */,
+				A1E608051A6203CA00FE3882 /* RGButton.h */,
+				A1E608061A6203CA00FE3882 /* RGButton.m */,
+				A1E607EC1A62030400FE3882 /* Images.xcassets */,
+				A1E607EE1A62030400FE3882 /* LaunchScreen.xib */,
+				A1E607DF1A62030400FE3882 /* Supporting Files */,
+			);
+			path = RGButton;
+			sourceTree = "<group>";
+		};
+		A1E607DF1A62030400FE3882 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1E607E01A62030400FE3882 /* Info.plist */,
+				A1E607E11A62030400FE3882 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1E607F81A62030400FE3882 /* RGButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1E607FB1A62030400FE3882 /* RGButtonTests.m */,
+				A1E607F91A62030400FE3882 /* Supporting Files */,
+			);
+			path = RGButtonTests;
+			sourceTree = "<group>";
+		};
+		A1E607F91A62030400FE3882 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1E607FA1A62030400FE3882 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1E607DB1A62030400FE3882 /* RGButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1E607FF1A62030400FE3882 /* Build configuration list for PBXNativeTarget "RGButton" */;
+			buildPhases = (
+				A1E607D81A62030400FE3882 /* Sources */,
+				A1E607D91A62030400FE3882 /* Frameworks */,
+				A1E607DA1A62030400FE3882 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RGButton;
+			productName = RGButton;
+			productReference = A1E607DC1A62030400FE3882 /* RGButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1E607F41A62030400FE3882 /* RGButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1E608021A62030400FE3882 /* Build configuration list for PBXNativeTarget "RGButtonTests" */;
+			buildPhases = (
+				A1E607F11A62030400FE3882 /* Sources */,
+				A1E607F21A62030400FE3882 /* Frameworks */,
+				A1E607F31A62030400FE3882 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1E607F71A62030400FE3882 /* PBXTargetDependency */,
+			);
+			name = RGButtonTests;
+			productName = RGButtonTests;
+			productReference = A1E607F51A62030400FE3882 /* RGButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1E607D41A62030300FE3882 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "ROBERA GELETA";
+				TargetAttributes = {
+					A1E607DB1A62030400FE3882 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					A1E607F41A62030400FE3882 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = A1E607DB1A62030400FE3882;
+					};
+				};
+			};
+			buildConfigurationList = A1E607D71A62030300FE3882 /* Build configuration list for PBXProject "RGButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1E607D31A62030300FE3882;
+			productRefGroup = A1E607DD1A62030400FE3882 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1E607DB1A62030400FE3882 /* RGButton */,
+				A1E607F41A62030400FE3882 /* RGButtonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1E607DA1A62030400FE3882 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1E607EB1A62030400FE3882 /* Main.storyboard in Resources */,
+				A1E607F01A62030400FE3882 /* LaunchScreen.xib in Resources */,
+				A1E607ED1A62030400FE3882 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1E607F31A62030400FE3882 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1E607D81A62030400FE3882 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1E607E81A62030400FE3882 /* ViewController.m in Sources */,
+				A1E607E51A62030400FE3882 /* AppDelegate.m in Sources */,
+				A1E608071A6203CA00FE3882 /* RGButton.m in Sources */,
+				A1E607E21A62030400FE3882 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1E607F11A62030400FE3882 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1E607FC1A62030400FE3882 /* RGButtonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1E607F71A62030400FE3882 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1E607DB1A62030400FE3882 /* RGButton */;
+			targetProxy = A1E607F61A62030400FE3882 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A1E607E91A62030400FE3882 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1E607EA1A62030400FE3882 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A1E607EE1A62030400FE3882 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1E607EF1A62030400FE3882 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1E607FD1A62030400FE3882 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A1E607FE1A62030400FE3882 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1E608001A62030400FE3882 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RGButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A1E608011A62030400FE3882 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RGButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A1E608031A62030400FE3882 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RGButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RGButton.app/RGButton";
+			};
+			name = Debug;
+		};
+		A1E608041A62030400FE3882 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RGButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RGButton.app/RGButton";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1E607D71A62030300FE3882 /* Build configuration list for PBXProject "RGButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1E607FD1A62030400FE3882 /* Debug */,
+				A1E607FE1A62030400FE3882 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1E607FF1A62030400FE3882 /* Build configuration list for PBXNativeTarget "RGButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1E608001A62030400FE3882 /* Debug */,
+				A1E608011A62030400FE3882 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A1E608021A62030400FE3882 /* Build configuration list for PBXNativeTarget "RGButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1E608031A62030400FE3882 /* Debug */,
+				A1E608041A62030400FE3882 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1E607D41A62030300FE3882 /* Project object */;
+}

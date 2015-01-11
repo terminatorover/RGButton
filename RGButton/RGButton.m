@@ -348,9 +348,15 @@
     [b5 setImage:imageArray[4] forState:UIControlStateNormal];
 }
 
-- (void)setCenterButtonImage:(UIImage *)setimage
+
+- (void)setCenterButtonImage:(UIImage *)setimage backgroundColor:(UIColor *)color;
 {
     imageView.image = setimage;
+    self.backgroundColor = color;
 }
 
+- (void)backGroundColor:(UIColor *)color
+{
+    darkerView.backgroundColor = color;
+}
 @end

@@ -13,7 +13,10 @@
 - (void)setRadius:(CGFloat )radiusSet;
 //--> allows you to set the images of the buttons. the 0th index is left most button
 - (void)setImagesForButtons:(NSArray *)imageArray;
-- (void)setCenterButtonImage:(UIImage *)setimage;
+
+- (void)setCenterButtonImage:(UIImage *)setimage backgroundColor:(UIColor *)color;
+//---> color of the shade that goes over the scene that the user sees(by default RED)
+- (void)backGroundColor:(UIColor *)color;
 @property id delegate;
 @end
 

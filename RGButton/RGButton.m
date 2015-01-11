@@ -348,9 +348,9 @@
     [b5 setImage:imageArray[4] forState:UIControlStateNormal];
 }
 
-- (void)setCenterButtonImage:(UIImage *)image
+- (void)setCenterButtonImage:(UIImage *)setimage
 {
-    imageView.image = image;
+    imageView.image = setimage;
 }
 
 @end

@@ -1,0 +1,12 @@
+# RGButton
+Custom Button when tapped displays an set of 5 buttons moving radially out . Inspired by myfitnesspal 
+
+Implement the RGButtonDelegateProtocol
+with the following method (it let's you know which button was tapped,the 0th index is left most button
+- (void)tappedButtonWithIndex:(NSInteger )index;
+
+#configuration 
+- (void)setSize:(CGSize )buttonSize;//size of the buttons that comeout radially
+- (void)setRadius:(CGFloat )radiusSet;//how far out the buttons move out
+- (void)setImagesForButtons:(NSArray *)imageArray;
+- (void)setCenterButtonImage:(UIImage *)setimage;

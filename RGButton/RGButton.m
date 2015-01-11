@@ -311,5 +311,15 @@
                      }];
 }
 
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    centerPoint = [mainWindow convertPoint:self.center fromView:self.superview];
+    centerPoint = CGPointMake(centerPoint.x - (self.bounds.size.width/4) , centerPoint.y - (self.bounds.size.width/2));
+ 
+    [self recomputePositions];
+    [darkerView setFrame:mainWindow.bounds];
+    [self animate];
+}
 
 @end

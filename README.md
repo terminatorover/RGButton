@@ -9,4 +9,5 @@ with the following method (it let's you know which button was tapped,the 0th ind
 
 - (void)setRadius:(CGFloat )radiusSet;//how far out the buttons move out
 - (void)setImagesForButtons:(NSArray *)imageArray;
-- (void)setCenterButtonImage:(UIImage *)setimage;
+- (void)setCenterButtonImage:(UIImage *)setimage backgroundColor:(UIColor *)color;
+- (void)backGroundColor:(UIColor *)color;

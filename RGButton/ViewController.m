@@ -25,8 +25,9 @@
     UIImage *i5 = [UIImage imageNamed:@"twitter-50"];
     NSArray *listOfImages = @[i1,i2,i3,i4,i5];
     [self.customButton setImagesForButtons:listOfImages];
-    [self.customButton setCenterButtonImage:[UIImage imageNamed:@"collapse-50"]];
+    [self.customButton setCenterButtonImage:[UIImage imageNamed:@"collapse-50"] backgroundColor:[UIColor greenColor]];
     [self.customButton setRadius:130 ];
+
 }
 
 - (void)viewWillAppear:(BOOL)animated

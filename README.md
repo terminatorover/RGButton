@@ -6,7 +6,7 @@ with the following method (it let's you know which button was tapped,the 0th ind
 - (void)tappedButtonWithIndex:(NSInteger )index;
 
 #configuration 
-- (void)setSize:(CGSize )buttonSize;//size of the buttons that comeout radially
+
 - (void)setRadius:(CGFloat )radiusSet;//how far out the buttons move out
 - (void)setImagesForButtons:(NSArray *)imageArray;
 - (void)setCenterButtonImage:(UIImage *)setimage;

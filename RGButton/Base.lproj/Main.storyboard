@@ -17,20 +17,29 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3U6-cT-njr" customClass="RGButton">
-                                <rect key="frame" x="275" y="275" width="50" height="50"/>
+                                <rect key="frame" x="265" y="530" width="70" height="70"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="VVB-Hx-boq"/>
-                                    <constraint firstAttribute="width" constant="50" id="fwj-Ys-SqW"/>
+                                    <constraint firstAttribute="width" constant="70" id="CeA-nD-foH"/>
+                                    <constraint firstAttribute="height" constant="70" id="Hx2-QV-kvH"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="3U6-cT-njr" secondAttribute="centerX" id="Ubk-uW-kO3"/>
-                            <constraint firstAttribute="centerY" secondItem="3U6-cT-njr" secondAttribute="centerY" id="kTr-g5-egC"/>
+                            <constraint firstAttribute="centerX" secondItem="3U6-cT-njr" secondAttribute="centerX" constant="6" id="Ubk-uW-kO3"/>
+                            <constraint firstAttribute="centerX" secondItem="3U6-cT-njr" secondAttribute="centerX" id="azc-qV-OFc"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="3U6-cT-njr" secondAttribute="bottom" id="jus-yR-7N6"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ubk-uW-kO3"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="customButton" destination="3U6-cT-njr" id="O3m-Po-cV7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

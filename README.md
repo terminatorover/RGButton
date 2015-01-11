@@ -1,4 +1,5 @@
 # RGButton
+[Check it out live](https://www.youtube.com/watch?v=RN47kjgtbhA&feature=youtu.be)
 Custom Button when tapped displays an set of 5 buttons moving radially out . Inspired by myfitnesspal 
 
 Implement the RGButtonDelegateProtocol
@@ -12,4 +13,4 @@ with the following method (it let's you know which button was tapped,the 0th ind
 - (void)setCenterButtonImage:(UIImage *)setimage backgroundColor:(UIColor *)color;
 - (void)backGroundColor:(UIColor *)color;
 
-[Check it out live](https://www.youtube.com/watch?v=RN47kjgtbhA&feature=youtu.be)
+

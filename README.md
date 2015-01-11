@@ -1,6 +1,6 @@
 # RGButton
 [Check it out live](https://www.youtube.com/watch?v=RN47kjgtbhA&feature=youtu.be)
-[GIF](http://gifyoutube.com/gif/vWNVnX)
+
 Custom Button when tapped displays an set of 5 buttons moving radially out . Inspired by myfitnesspal 
 
 Implement the RGButtonDelegateProtocol

@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface RGButton : UIView
-
+- (void)setSize:(CGSize )buttonSize;
+- (void)setRadius:(CGFloat )radiusSet;
 @end

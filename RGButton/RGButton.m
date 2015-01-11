@@ -29,6 +29,7 @@
     
     CGPoint centerPoint;
     
+    CGSize size;
     BOOL tapped;
 
 }
@@ -106,6 +107,8 @@
     position3 = CGPointMake(centerPoint.x + radius * cos(M_PI/2), centerPoint.y - radius* sin(M_PI/2));
     position4 = CGPointMake(centerPoint.x + radius * cos(2 * M_PI/3),centerPoint.y - radius* sin(2 * M_PI/3));
     position5 = CGPointMake(centerPoint.x + radius * cos(5 * M_PI/6),centerPoint.y - radius* sin(5 * M_PI/6));
+    
+    size = CGSizeMake(self.bounds.size.width/1.5,self.bounds.size.height/1.5);
 }
 
 - (void)setUpGestureRecognition
@@ -162,23 +165,24 @@
         [mainWindow addSubview:b4];
         [mainWindow addSubview:b5];
         [self visibility:YES];
+
         
-        b1.frame = CGRectMake(position1.x, position1.y, self.bounds.size.width/2, self.bounds.size.height/2);
-        b2.frame = CGRectMake(position2.x, position2.y, self.bounds.size.width/2, self.bounds.size.height/2);
-        b3.frame = CGRectMake(position3.x, position3.y, self.bounds.size.width/2, self.bounds.size.height/2);
-        b4.frame = CGRectMake(position4.x, position4.y, self.bounds.size.width/2, self.bounds.size.height/2);
-        b5.frame = CGRectMake(position5.x, position5.y, self.bounds.size.width/2, self.bounds.size.height/2);
+        b1.frame = CGRectMake(position1.x, position1.y, size.width, size.height);
+        b2.frame = CGRectMake(position2.x, position2.y, size.width, size.height);
+        b3.frame = CGRectMake(position3.x, position3.y, size.width, size.height);
+        b4.frame = CGRectMake(position4.x, position4.y, size.width, size.height);
+        b5.frame = CGRectMake(position5.x, position5.y, size.width, size.height);
         
    
     }
     else//move the views to the center
     {
         [UIView animateWithDuration:.5 animations:^{
-            b1.frame = CGRectMake(centerPoint.x, centerPoint.y,40, 40);
-            b2.frame = CGRectMake(centerPoint.x, centerPoint.y, 40, 40);
-            b3.frame = CGRectMake(centerPoint.x, centerPoint.y, 40, 40);
-            b4.frame = CGRectMake(centerPoint.x, centerPoint.y, 40, 40);
-            b5.frame = CGRectMake(centerPoint.x, centerPoint.y, 40, 40);
+            b1.frame = CGRectMake(centerPoint.x, centerPoint.y,self.bounds.size.width/2, self.bounds.size.width/2);
+            b2.frame = CGRectMake(centerPoint.x, centerPoint.y,self.bounds.size.width/2, self.bounds.size.width/2);
+            b3.frame = CGRectMake(centerPoint.x, centerPoint.y,self.bounds.size.width/2, self.bounds.size.width/2);
+            b4.frame = CGRectMake(centerPoint.x, centerPoint.y,self.bounds.size.width/2, self.bounds.size.width/2);
+            b5.frame = CGRectMake(centerPoint.x, centerPoint.y,self.bounds.size.width/2, self.bounds.size.width/2);
             darkerView.alpha = 0.0;
             [self visibility:NO];
         } completion:^(BOOL finished) {
@@ -226,9 +230,27 @@
 }
 
 
+- (void)recomputePositions
+{
+    position1 = CGPointMake(centerPoint.x + radius * cos(M_PI/6), centerPoint.y - radius* sin(M_PI/6));
+    position2 = CGPointMake(centerPoint.x + radius * cos(M_PI/3),centerPoint.y - radius* sin(M_PI/3));
+    position3 = CGPointMake(centerPoint.x + radius * cos(M_PI/2), centerPoint.y - radius* sin(M_PI/2));
+    position4 = CGPointMake(centerPoint.x + radius * cos(2 * M_PI/3),centerPoint.y - radius* sin(2 * M_PI/3));
+    position5 = CGPointMake(centerPoint.x + radius * cos(5 * M_PI/6),centerPoint.y - radius* sin(5 * M_PI/6));
+}
 
+#pragma mark - Configuration
+#pragma mark - Setting size of the view 
+- (void)setSize:(CGSize )buttonSize
+{
+    size = buttonSize;
+}
 
-
+- (void)setRadius:(CGFloat )radiusSet
+{
+    radius = radiusSet;
+    [self recomputePositions];
+}
 
 
 @end

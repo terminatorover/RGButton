@@ -96,7 +96,7 @@
     [self makeTheViewsCircular];
     darkerView = [[UIView alloc]initWithFrame:mainWindow.bounds];
     darkerView.backgroundColor = [UIColor redColor];
-    darkerView.alpha = .4;
+    darkerView.alpha = .7;
     darkerView.userInteractionEnabled = NO;
     radius = 120;
 
@@ -117,8 +117,8 @@
 #pragma mark - Circle
 - (void)makeLayerCircular:(CALayer *)layer
 {
-    layer.cornerRadius = layer.bounds.size.width /2 ;
-    
+    layer.cornerRadius = layer.bounds.size.width /4 ;
+
 }
 
 - (void)makeTheViewsCircular
@@ -134,24 +134,18 @@
 #pragma mark - Tap Gesture 
 - (void)tapped:(UITapGestureRecognizer *)sender
 {
-//    [UIView animateWithDuration:2.0 animations:^{
-//        [self moveView:!tapped];
-//        tapped = !tapped;
-//    }];
-    
-    [UIView animateWithDuration:2.0 animations:^{
+
+
+    [UIView animateWithDuration:.4
+                          delay:0.0
+         usingSpringWithDamping:.4
+          initialSpringVelocity:5
+                        options:UIViewAnimationOptionCurveEaseIn//UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
         [self moveView:!tapped];
         tapped = !tapped;
     } completion:^(BOOL finished) {
-        if(tapped)
-        {
-//            [b1 removeFromSuperview];
-//            [b2 removeFromSuperview];
-//            [b3 removeFromSuperview];
-//            [b4 removeFromSuperview];
-//            [b5 removeFromSuperview];
-
-        }
+        
     }];
 }
 

@@ -53,18 +53,8 @@
     self = [super initWithCoder:aDecoder];
     if(self)
     {
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [self setUpViewHierrachy];
-            UIImage *i1 = [UIImage imageNamed:@"dropbox_copyrighted-50"];
-            UIImage *i2 = [UIImage imageNamed:@"facebook-50"];
-            UIImage *i3 = [UIImage imageNamed:@"foursquare-50"];
-            UIImage *i4 = [UIImage imageNamed:@"google_plus-50"];
-            UIImage *i5 = [UIImage imageNamed:@"twitter-50"];
-            NSArray *listOfImages = @[i1,i2,i3,i4,i5];
-            [self setImagesForButtons:listOfImages];
-        });
-
-         [self setUpGestureRecognition];
+        [self setUpViewHierrachy];
+        [self setUpGestureRecognition];
     }
     return self;
 }
@@ -124,15 +114,13 @@
     
     size = CGSizeMake(self.bounds.size.width/1.5,self.bounds.size.height/1.5);
     
-    image = [UIImage imageNamed:@"collapse-50"];
+
     imageView = [[UIImageView alloc]initWithFrame:self.bounds];
     [self addSubview:imageView];
-    imageView.image = image;
     imageView.layer.masksToBounds = YES;
     imageView.layer.cornerRadius = imageView.layer.bounds.size.width /2;
     self.layer.cornerRadius = self.layer.bounds.size.width/2;
-    
-//    layer.cornerRadius
+
 }
 
 - (void)setUpGestureRecognition
@@ -358,8 +346,11 @@
     [b3 setImage:imageArray[2] forState:UIControlStateNormal];
     [b4 setImage:imageArray[3] forState:UIControlStateNormal];
     [b5 setImage:imageArray[4] forState:UIControlStateNormal];
-    
-    
+}
+
+- (void)setCenterButtonImage:(UIImage *)image
+{
+    imageView.image = image;
 }
 
 @end

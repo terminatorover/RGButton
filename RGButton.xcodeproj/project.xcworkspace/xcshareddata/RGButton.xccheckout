@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2883E735-86B5-4E49-B6EC-B2931B31A78A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RGButton</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F5D22AC805699AF60BD6CE536C39BD9489FCD93E</key>
+		<string>https://github.com/terminatorover/RGButton.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RGButton.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F5D22AC805699AF60BD6CE536C39BD9489FCD93E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/terminatorover/RGButton.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F5D22AC805699AF60BD6CE536C39BD9489FCD93E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F5D22AC805699AF60BD6CE536C39BD9489FCD93E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RGButton</string>
+		</dict>
+	</array>
+</dict>
+</plist>

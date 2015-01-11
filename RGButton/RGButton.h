@@ -13,7 +13,7 @@
 - (void)setRadius:(CGFloat )radiusSet;
 //--> allows you to set the images of the buttons. the 0th index is left most button
 - (void)setImagesForButtons:(NSArray *)imageArray;
-
+- (void)setCenterButtonImage:(UIImage *)image;
 @property id delegate;
 @end
 

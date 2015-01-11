@@ -11,4 +11,10 @@
 @interface RGButton : UIView
 - (void)setSize:(CGSize )buttonSize;
 - (void)setRadius:(CGFloat )radiusSet;
+@property id delegate;
+@end
+
+
+@protocol RGButtonDelegate <NSObject>
+- (void)tappedButtonWithIndex:(NSInteger )index;
 @end

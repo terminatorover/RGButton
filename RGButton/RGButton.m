@@ -84,7 +84,13 @@
     b4 = [[UIButton alloc]initWithFrame:CGRectMake(centerPoint.x, centerPoint.y, 0, 0)];
     b5 = [[UIButton alloc]initWithFrame:CGRectMake(centerPoint.x, centerPoint.y, 0, 0)];
     
-
+    
+    [b1 addTarget:self action:@selector(button1) forControlEvents:UIControlEventTouchUpInside];
+    [b2 addTarget:self action:@selector(button2) forControlEvents:UIControlEventTouchUpInside];
+    [b3 addTarget:self action:@selector(button3) forControlEvents:UIControlEventTouchUpInside];
+    [b4 addTarget:self action:@selector(button4) forControlEvents:UIControlEventTouchUpInside];
+    [b5 addTarget:self action:@selector(button5) forControlEvents:UIControlEventTouchUpInside];
+    
     
     b1.backgroundColor = [UIColor greenColor];
     b2.backgroundColor = [UIColor grayColor];
@@ -137,19 +143,7 @@
 #pragma mark - Tap Gesture 
 - (void)tapped:(UITapGestureRecognizer *)sender
 {
-
-
-    [UIView animateWithDuration:.4
-                          delay:0.0
-         usingSpringWithDamping:.4
-          initialSpringVelocity:5
-                        options:UIViewAnimationOptionCurveEaseIn//UIViewAnimationOptionCurveEaseInOut
-                     animations:^{
-        [self moveView:!tapped];
-        tapped = !tapped;
-    } completion:^(BOOL finished) {
-        
-    }];
+    [self animate];
 }
 
 
@@ -250,6 +244,71 @@
 {
     radius = radiusSet;
     [self recomputePositions];
+}
+
+
+#pragma mark - 
+
+- (void)button1
+{
+    [self animate];
+    if(_delegate && [_delegate respondsToSelector:@selector(tappedButtonWithIndex:)])
+    {
+        [_delegate tappedButtonWithIndex:1];
+    }
+}
+
+- (void)button2
+{
+    [self animate];
+    if(_delegate && [_delegate respondsToSelector:@selector(tappedButtonWithIndex:)])
+    {
+        [_delegate tappedButtonWithIndex:2];
+    }
+}
+
+- (void)button3
+{
+    [self animate];
+    if(_delegate && [_delegate respondsToSelector:@selector(tappedButtonWithIndex:)])
+    {
+        [_delegate tappedButtonWithIndex:3];
+    }
+}
+
+- (void)button4
+{
+    [self animate];
+    if(_delegate && [_delegate respondsToSelector:@selector(tappedButtonWithIndex:)])
+    {
+        [_delegate tappedButtonWithIndex:4];
+    }
+}
+
+- (void)button5
+{
+    [self animate];
+    if(_delegate && [_delegate respondsToSelector:@selector(tappedButtonWithIndex:)])
+    {
+        [_delegate tappedButtonWithIndex:5];
+    }
+}
+
+
+#pragma mark - Animations
+- (void)animate
+{
+    [UIView animateWithDuration:.4
+                          delay:0.0
+         usingSpringWithDamping:.4
+          initialSpringVelocity:5
+                        options:UIViewAnimationOptionCurveEaseIn//UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         [self moveView:!tapped];
+                         tapped = !tapped;
+                     } completion:^(BOOL finished) {
+                         
+                     }];
 }
 
 

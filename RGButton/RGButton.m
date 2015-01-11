@@ -186,14 +186,16 @@
             b4.frame = CGRectMake(centerPoint.x, centerPoint.y, 40, 40);
             b5.frame = CGRectMake(centerPoint.x, centerPoint.y, 40, 40);
             darkerView.alpha = 0.0;
-
+            [self visibility:NO];
         } completion:^(BOOL finished) {
+            [self visibility:YES];
             [darkerView removeFromSuperview];
             [b1 removeFromSuperview];
             [b2 removeFromSuperview];
             [b3 removeFromSuperview];
             [b4 removeFromSuperview];
             [b5 removeFromSuperview];
+            darkerView.alpha = 0.5;
 
         }];
         
@@ -215,6 +217,7 @@
         b3.alpha = 0.0;
         b4.alpha = 0.0;
         b4.alpha = 0.0;
+        b5.alpha = 0.0;
     }
     else
     {
@@ -223,6 +226,7 @@
         b3.alpha = 1.0;
         b4.alpha = 1.0;
         b4.alpha = 1.0;
+        b5.alpha = 1.0;
 
     }
 }

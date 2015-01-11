@@ -11,3 +11,5 @@ with the following method (it let's you know which button was tapped,the 0th ind
 - (void)setImagesForButtons:(NSArray *)imageArray;
 - (void)setCenterButtonImage:(UIImage *)setimage backgroundColor:(UIColor *)color;
 - (void)backGroundColor:(UIColor *)color;
+
+[Check it out live](https://www.youtube.com/watch?v=RN47kjgtbhA&feature=youtu.be)
